@@ -8,7 +8,7 @@ public:
 
         for (int j = k; j < n; j++) {
             maxi = max(maxi, nums[j - k]);
-            ans = max(ans, maxi + nums[j]);
+            ans = max(ans, maxi + nums[j]);  //ye code contest ka hai 
         }
 
         return ans;
