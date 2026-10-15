@@ -8,13 +8,11 @@ public:
 
         for (int i = 0; i < n; i++) {
             if (n % (i + 1) == 0) {
-                ans.push_back(nums[i]);
+                sum+=nums[i]*nums[i];
             }
         }
 
-        for (int x : ans) {
-            sum += x * x;
-        }
+       
 
         return sum;
     }
