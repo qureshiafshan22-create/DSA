@@ -9,7 +9,7 @@ public:
         int maxSum=sum;
         //sliding the window
         for(int i=k;i<nums.size();i++){
-            sum=sum-nums[i-k]+nums[i];//imp part
+            sum=sum-nums[i-k]+nums[i];//imp part removing first element and adding other
             maxSum=max(sum,maxSum);
 
         }
